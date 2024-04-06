@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  max-width: 1450px;
+}
+.active span{
+  font-weight: bold;
+}
