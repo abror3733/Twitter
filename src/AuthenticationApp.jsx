@@ -17,7 +17,7 @@ import SearchWrap from './components/SearchWrap/SearchWrap'
 function AuthenticationApp(){
   return (
     <div className='flex container mx-auto px-5'>
-      <div className='w-[20%] h-[100vh] overflow-y-auto pl-[50px] pt-[30px]'>
+      <div className='w-[20%] h-[100vh] overflow-y-auto pl-[10px] pt-[30px]'>
         <Navbar/>
       </div>
       <div className='w-[52%]  h-[100vh] overflow-y-auto border-r-[2px] border-[#C4C4C4] border-l-[2px]'>
@@ -31,7 +31,7 @@ function AuthenticationApp(){
         <Route path='/more' element={<More/>}/>
       </Routes>
       </div>
-      <div className='w-[28%]  h-[100vh] overflow-y-auto px-[30px] pt-[20px]'>
+      <div className='w-[28%]  h-[100vh] overflow-y-auto pl-[30px] pb-[40px] pt-[20px]'>
         <SearchWrap/>
       </div>
     </div>

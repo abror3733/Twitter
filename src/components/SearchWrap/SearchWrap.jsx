@@ -1,7 +1,10 @@
 import React from 'react'
 import elSearchImg from "../../assets/Images/search.svg"
 import elSettings from "../../assets/Images/settings.svg"
+import mushtariy from "../../assets/Images/mushtariy.png"
+import shuhratbek from "../../assets/Images/shuhratbek.png"
 import TrendsItem from '../TrendsItem/TrendsItem'
+import Follow from '../Follow/Follow'
 
 
 function SearchWrap() {
@@ -23,6 +26,17 @@ function SearchWrap() {
         </div>
         <span className='text-[#1DA1F2] text-[18px] font-semibold'>Show more</span>
       </div>
+      <div className='w-full flex flex-col px-[15px] pt-[20px] pb-[30px] mt-[20px] rounded-[10px] bg-[#F7F9F9]'>
+      <h3 className='text-[24px] text-[#000000] font-bold'>You might like</h3>
+       <div className='space-y-10 pt-[20px]'>
+       <Follow imgUrl={mushtariy} title={"Mushtariy"} email={"@Mushtar565266"}/>
+       <Follow imgUrl={shuhratbek} title={"Shuhratbek"} email={"@mrshukhrat"}/>
+       <span className='text-[#1DA1F2] text-[18px] font-semibold block'>Show more</span>
+       </div>
+      </div>
+      <p className='text-[#536471] text-[14px] mt-10 text-center'>Terms of Service Privacy Policy Cookie Policy
+       Imprint Ads Info More ··· © 2021 Twitter, Inc.
+       </p>
     </div>
   )
 }
