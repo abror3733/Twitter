@@ -1,5 +1,5 @@
 import React from 'react'
-import elVector from "../../assets/Images/vector.svg"
+import elVector from '../../assets/Images/vector.svg'
 function TrendsItem({titletop,title,titlebottom}) {
   return (
     <div className='flex items-center justify-between pb-4'>

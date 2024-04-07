@@ -5,15 +5,17 @@ import mushtariy from "../../assets/Images/mushtariy.png"
 import shuhratbek from "../../assets/Images/shuhratbek.png"
 import TrendsItem from '../TrendsItem/TrendsItem'
 import Follow from '../Follow/Follow'
+import searchheroimg from "../../assets/Images/searchheroimg.png"
 
+function SearchWrap({state}) {
 
-function SearchWrap() {
   return (
     <div className='w-[300px]'>
       <label className='relative'>
         <img className='absolute left-[26px] top-[-1px]' src={elSearchImg} alt="icon" width={24} height={24}/>
         <input className='bg-[#EFF3F4] text-[#5C6C79] text-[18px] pt-[15px] pb-[16px] pl-[64px] w-full rounded-[30px] outline-none' type="text" placeholder='Search Twitter' />
       </label>
+    {state &&  <img className='pt-5' src={searchheroimg} alt="img" width={"100%"} /> }
       <div className='w-full flex flex-col px-[15px] pt-[20px] pb-[30px] mt-[20px] rounded-[10px] bg-[#F7F9F9]'>
         <div className='flex items-center justify-between'>
         <h3 className='text-[24px] font-bold'>Trends for you</h3>
